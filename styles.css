@@ -102,7 +102,7 @@ body {
 .menu {
     position: absolute;
     top: 400px; /* Ajusta la posición vertical según necesites */
-    right: 262px;
+    right: 198px;
     transform: translateX(-50%);
     background-color: #37475a; /* Color de fondo del menú */
     padding: 8px;
@@ -134,4 +134,14 @@ body {
     border-right: 8px solid transparent;
     border-top: 8px solid #37475a; /* Color de fondo del menú */
 }
+
+/* Estilo para el texto "SHARE" */
+.share-text {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
 
