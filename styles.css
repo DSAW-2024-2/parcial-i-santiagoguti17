@@ -101,8 +101,8 @@ body {
 /* Estilo para el menú flotante */
 .menu {
     position: absolute;
-    top: 400px; 
-    right: 198px;
+    top: 58%; 
+    right: 12.8%;
     transform: translateX(-50%);
     background-color: #37475a; /* Color de fondo del menú */
     padding: 8px;
