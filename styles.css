@@ -1,17 +1,20 @@
-/* General styles */
+/* Importar la fuente Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* Estilos generales */
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
     background-color: hsl(210, 46%, 95%);
-    display: flex;    
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
-  
-  /* Container */
-  .container {
+}
+
+/* Contenedor */
+.container {
     display: flex;
     background-color: white;
     border-radius: 8px;
@@ -19,72 +22,77 @@ body {
     overflow: hidden;
     max-width: 800px;
     width: 100%;
-  }
-  
-  /* Image */
-  .container .drawers-image {
+}
+
+/* Imagen */
+.container .drawers-image {
     width: 50%;
     object-fit: cover;
-  }
-  
-  /* Content */
-  .container .content {
+}
+
+/* Contenido */
+.container .content {
     padding: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .container .content h1 {
+}
+
+.container .content h1 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700; /* Usando Manrope 700 */
     color: hsl(217, 19%, 35%);
     margin: 0 0 10px;
-  }
-  
-  .container .content p {
+}
+
+.container .content p {
     color: hsl(214, 17%, 51%);
     margin: 0 0 20px;
-  }
-  
-  .container .content .author-info {
+}
+
+.container .content .author-info {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .container .content .author-info img {
+}
+
+.container .content .author-info img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
-  
-  .container .content .author-info h2 {
+}
+
+.container .content .author-info h2 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500; /* Usando Manrope 500 */
     margin: 0;
     color: hsl(217, 19%, 35%);
-  }
-  
-  .container .content .author-info p {
+}
+
+.container .content .author-info p {
     font-size: 12px;
     color: hsl(212, 23%, 69%);
     margin: 0;
-  }
-  
-  /* Share button */
-  .container .content .share-button {
-      position: relative;
-      align-self: flex-end;
-      background-color: hsl(217, 19%, 35%);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
+}
+
+/* Botón de compartir */
+.container .content .share-button {
+    position: relative;
+    align-self: flex-end;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Mostrar menú cuando esté activo */
+.container .content .share-container.active .share-menu {
+    display: flex;
+}
