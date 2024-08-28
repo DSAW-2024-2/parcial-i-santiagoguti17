@@ -92,7 +92,46 @@ body {
     cursor: pointer;
 }
 
-/* Mostrar menú cuando esté activo */
-.container .content .share-container.active .share-menu {
-    display: flex;
+/* Estilo para el botón de compartir */
+.share-button {
+    position: relative;
+    cursor: pointer;
 }
+
+/* Estilo para el menú flotante */
+.menu {
+    position: absolute;
+    top: 400px; /* Ajusta la posición vertical según necesites */
+    right: 262px;
+    transform: translateX(-50%);
+    background-color: #37475a; /* Color de fondo del menú */
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo para las imágenes dentro del menú */
+.menu img {
+    width: 24px;    
+    height: 24px;
+    cursor: pointer;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+/* Flecha en la parte inferior del menú */
+.menu::before {
+    content: '';
+    position: absolute;
+    bottom: -8px; /* Ajusta la posición vertical de la flecha */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #37475a; /* Color de fondo del menú */
+}
+
